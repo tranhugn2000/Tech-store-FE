@@ -1,0 +1,161 @@
+.rounded-custom{
+    border-radius: 57% 19% 100% 60% / 47% 19% 49% 100% ;
+}
+.rounded-items-product{
+    border-radius: 24% 34% 23% 34% / 34% 15% 24% 15%  ;
+}
+.banner{
+    background-image: url(../images/banner.jpg);
+}
+.item{
+    display: none;
+}
+.active{
+    display: block;
+}
+.hide{
+    display: block;
+}
+.active img:nth-child(1){
+    animation:img1show 2.3s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+.active img:nth-child(2){
+    animation:img2show 2.3s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+.active img:nth-child(3){
+    animation:img3show 2s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+.active img:nth-child(4){
+    animation:img4show 2.3s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+@keyframes img1show{
+    0%{
+    opacity: 0;
+    left: 100%;
+    }
+    10%{
+    opacity: 1;
+    }100%{
+    opacity: 1;
+    left: 20%;
+    }
+}
+@keyframes img2show{
+    0%{
+    opacity: 0;
+    left: 100%;
+    transform: rotate(90deg);
+    }
+    10%{
+    opacity: 1;
+    }100%{
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 60%;
+    }
+}
+@keyframes img3show{
+    0%{
+    opacity: 0;
+    left: 100%;
+    transform: rotate(90deg);
+    }
+    10%{
+    opacity: 1;
+    }100%{
+    opacity: 1;
+    transform: rotate(0deg);
+    top: 60%;
+    left: 14%;
+    }
+}
+@keyframes img4show{
+    0%{
+    opacity: 0;
+    left: 100%;
+    }
+    10%{
+    opacity: 1;
+    }100%{
+    opacity: 1;
+    left: 30%;
+    transform: rotate(0deg);    
+    }
+}
+
+.hide img:nth-child(1){
+    animation:img1hide 5s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+.hide img:nth-child(2){
+    animation:img2hide 2.3s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+.hide img:nth-child(3){
+    animation:img3hide 2s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+.hide img:nth-child(4){
+    animation:img4hide 5s cubic-bezier(0, 0, 0, 1.01) 1 forwards;
+}
+@keyframes img1hide{
+   0%{
+    opacity: 1;
+    left: 0%;
+    }100%{
+     opacity: 0;
+     left: -125%;
+    }
+
+}
+@keyframes img2hide{
+   0%{
+    opacity: 1;
+    left: 100%;
+    transform: rotate(90deg);
+    }70%{
+     opacity: 0.5;
+    }100%{
+     opacity: 0;
+     left: -125%;
+     transform: rotate(0deg);
+    }
+
+}
+@keyframes img3hide{
+   0%{
+    opacity: 1;
+    left: 100%;
+    transform: rotate(0deg);
+    }70%{
+     opacity: 0.5;
+    }100%{
+     opacity: 0;
+     left: -125%;
+     transform: rotate(180deg);
+    }
+
+}
+@keyframes img4hide{
+   0%{
+    opacity: 1;
+    left: 10%;
+    transform: rotate(0deg); 
+    }70%{
+     opacity: 0.5;
+    }100%{
+     opacity: 0;
+     left: -125%;
+    }
+
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in forwards;
+}
